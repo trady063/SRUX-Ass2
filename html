@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore Health Clinic</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Main Colors */
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f7fa;
+            --text-color: #333;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Appointment Section */
+        .appointment-section {
+            text-align: center;
+        }
+        .appointment-section button {
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .appointment-section button:hover {
+            background-color: #357ABD;
+        }
+
+        /* Services Section */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-item {
+            flex: 1 1 250px;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Restore Health Clinic</h1>
+        <nav>
+            <a href="#appointment">Book Appointment</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="appointment-section">
+            <h2>Book an Appointment</h2>
+            <p>Convenient online booking for our patients. Get reminders and manage your appointments with ease.</p>
+            <button>Book Now</button>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Online Booking</h3>
+                    <p>Schedule appointments online without needing to call.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Appointment Reminders</h3>
+                    <p>Receive SMS or email reminders before your appointment.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Medicare Billing</h3>
+                    <p>Automatic Medicare processing for a hassle-free experience.</p>
+                </div>
+                <div class="service-item">
+                    <h3>QR Code Check-In</h3>
+                    <p>Skip the line and check in using a QR code.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Personalized Reminders</h3>
+                    <p>Select your preferred communication method (SMS, email, or call).</p>
+                </div>
+                <div class="service-item">
+                    <h3>Flexible Payments</h3>
+                    <p>Pay with cash, card, or Medicare options available.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@restorehealthclinic.com</p>
+            <p>Address: 123 Health St., Adelaide, SA</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
